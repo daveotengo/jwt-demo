@@ -1,0 +1,20 @@
+server:
+  port: 34334
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret: secretkey123
+
+logging:
+  level:
+    root: INFO
+
